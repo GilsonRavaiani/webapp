@@ -1,0 +1,140 @@
+* {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  background-image: url('./tempo/Astronauta.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: rgb(251, 251, 252);
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+#fonte {
+  background-color: rgb(88, 158, 216);
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-around;
+  border-style: inset;
+}
+
+.fonte {
+  font-size: x-large;
+}
+
+h1 {
+  padding: 50px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nossa-foto {
+  max-width: 150px;
+  border-style: inset;
+  border-color: hsl(235, 86%, 65%);
+  border-radius: 15%;
+  width: 200px;
+  height: 150px;
+}
+
+.logo-nav {
+  display: flex;
+  max-width: 150px;
+  height: 130px;
+  width: 200px;
+  border-radius: 10%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+
+section {
+  background-color: #5734b8;
+  border-radius: 10px;
+  max-width: 150px;
+  margin: auto;
+  padding: 10px;
+  font-size: medium;
+}
+
+#ladoalado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 13px;
+}
+
+.apresentacao {
+  font-size: medium;
+  color: aliceblue;
+  border: 6px solid #4b3892;
+  margin: 50px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+
+footer {
+  padding: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .apresentacao {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  h1 {
+    padding: 20px;
+  }
+
+  #fonte {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  .nossa-foto, .logo-nav {
+    width: 100%;
+    max-width: 150px;
+  }
+}
